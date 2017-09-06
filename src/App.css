@@ -7,12 +7,32 @@ ul {
   margin: 0;
   padding: 0; }
 
+h1 {
+  margin: 0; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+
+@media screen and (min-width: 1200px) {
+  .responsive-width, .App-header, .jumbotron {
+    max-width: 900px; } }
+
+@media screen and (min-width: 1440px) {
+  .responsive-width, .App-header, .jumbotron {
+    max-width: 1100px; } }
+
+@media screen and (min-width: 1920px) {
+  .responsive-width, .App-header, .jumbotron {
+    max-width: 1300px; } }
+
 .App {
+  color: #303D49;
   background: #f8f8f9;
   min-height: 100vh;
-  font-family: Roboto; }
+  font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimSun, sans-serif; }
 
-.clearfix:after {
+.clearfix::after {
   display: block;
   content: ".";
   clear: both;
@@ -20,31 +40,46 @@ ul {
   visibility: hidden; }
 
 .App-header {
+  width: 100%;
+  position: fixed;
   padding-top: 40px;
-  margin: 0 auto;
-  color: #1c1b1b; }
+  color: #1c1b1b;
+  transition: .2s;
+  z-index: 99; }
   @media screen and (min-width: 1200px) {
     .App-header {
-      max-width: 900px; } }
+      max-width: 900px;
+      padding-left: calc((100% - 900px) / 2);
+      padding-right: calc((100% - 900px) / 2); } }
   @media screen and (min-width: 1440px) {
     .App-header {
-      max-width: 1100px; } }
+      max-width: 1100px;
+      padding-left: calc((100% - 1100px) / 2);
+      padding-right: calc((100% - 1100px) / 2); } }
   @media screen and (min-width: 1920px) {
     .App-header {
-      max-width: 1300px; } }
+      max-width: 1300px;
+      padding-left: calc((100% - 1300px) / 2);
+      padding-right: calc((100% - 1300px) / 2); } }
+  .App-header.header-docked {
+    padding-top: 0;
+    background-color: #fff;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1); }
+    .App-header.header-docked .slogan {
+      display: none; }
 
 .navbar-brand {
   float: left; }
   .navbar-brand .logo {
-    height: 50px;
-    line-height: 50px;
-    padding-top: 10px;
+    height: 40px;
+    line-height: 40px;
+    padding-top: 20px;
     font-size: 24px; }
   .navbar-brand .slogan {
     height: 20px;
     line-height: 20px;
     font-size: 14px;
-    font-weight: 100;
+    font-weight: 300;
     margin-top: -3px; }
 
 .navbar-right {
@@ -55,11 +90,70 @@ ul {
     line-height: 80px;
     float: left;
     margin-left: 30px; }
+    .navbar-right .nav-item a {
+      position: relative; }
+      .navbar-right .nav-item a::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: calc(100% + 8px);
+        left: 0;
+        right: 0;
+        height: 2px;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        transition: -webkit-transform 0.15s ease-in;
+          transition-transform: .15s ease-in;
+          transition-transform: .15s ease-in,-webkit-transform .15s ease-in;
+        -webkit-transform-origin: right center;
+        transform-origin: right center; }
+      .navbar-right .nav-item a:hover::after {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transform-origin: left center;
+        transform-origin: left center; }
+      .navbar-right .nav-item a::after {
+        background: #1c1b1b; }
   .navbar-right .nav-item:first-child {
     margin-left: 0; }
 
 .jumbotron {
-  height: 400px; }
+  height: 300px;
+  margin: 0 auto;
+  padding-top: 210px; }
+  .jumbotron h1 {
+    margin-bottom: 30px; }
+    .jumbotron h1 span {
+      display: block;
+      font-size: 46px;
+      font-weight: 100; }
+  .jumbotron .download-link {
+    color: #42c5d8;
+    font-size: 14px;
+    text-transform: uppercase;
+    position: relative; }
+    .jumbotron .download-link::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: calc(100% + 8px);
+      left: 0;
+      right: 0;
+      height: 2px;
+      -webkit-transform: scaleX(0);
+      transform: scaleX(0);
+      transition: -webkit-transform 0.15s ease-in;
+        transition-transform: .15s ease-in;
+        transition-transform: .15s ease-in,-webkit-transform .15s ease-in;
+      -webkit-transform-origin: right center;
+      transform-origin: right center; }
+    .jumbotron .download-link:hover::after {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      -webkit-transform-origin: left center;
+      transform-origin: left center; }
+    .jumbotron .download-link::after {
+      background: #42c5d8; }
 
 .presentation {
   width: 850px;
@@ -67,6 +161,11 @@ ul {
   margin: 0 auto; }
 
 .main {
+  height: 600px;
+  margin-top: -160px;
+  background-color: #fff; }
+
+.footer {
   height: 500px;
-  background-color: #fff;
-  margin-top: -160px; }
+  margin-top: 400px;
+  background: linear-gradient(90deg, #1c1b1b 0, #1c1b1b 50%, transparent 0, transparent); }
