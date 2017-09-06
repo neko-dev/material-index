@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  background: #f8f8f9;
+  min-height: 100vh;
+  font-family: Roboto;
+}
+
+.clearfix:after {
+  display:block; 
+  content: ".";
+  clear: both;
+  line-height: 0;
+  visibility:hidden;
+}
+
+.App-header {
+  padding-top: 40px;
+  margin: 0 auto;
+  color: #1c1b1b;
+  @media screen and (min-width: 1200px) {
+    max-width: 900px;
+  }
+  @media screen and (min-width: 1440px) {
+    max-width: 1100px;
+  }
+  @media screen and (min-width: 1920px) {
+    max-width: 1300px;
+  }
+}
+
+.navbar-brand {
+  float: left;
+
+  .logo {
+    height: 50px;
+    line-height: 50px;
+    padding-top: 10px;
+    font-size: 24px;
+  }
+
+  .slogan {
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: 100;
+    margin-top: -3px;
+  }
+}
+
+.navbar-right {
+  float: right;
+  font-weight: 500;
+
+  .nav-item {
+    height: 80px;
+    line-height: 80px;
+    float: left;
+    margin-left: 30px;
+  }
+
+  .nav-item:first-child{
+    margin-left: 0;
+  }
+}
+
+.jumbotron {
+  height: 400px;
+}
+
+.presentation {
+  width: 850px;
+  height: 525px;
+  margin: 0 auto;
+}
+
+.main {
+  height: 500px;
+  background-color: #fff;
+  margin-top: -160px;
+}
+
