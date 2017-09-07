@@ -1,4 +1,13 @@
-@mixin link-underline {
+$fullwidth: 100%;
+$two: 2;
+
+@mixin scaleX($angle) {
+  -webkit-transform: scaleX($angle);
+  -moz-transform: scaleX($angle);
+  transform: scaleX($angle);
+}
+
+@mixin link-underline($color) {
   position: relative;
   &::after {
     content: "";
@@ -8,8 +17,8 @@
     left: 0;
     right: 0;
     height: 2px;
-    -webkit-transform: scaleX(0);
-    transform: scaleX(0);
+    background: $color;
+    @include scaleX(0);
     transition: -webkit-transform .15s ease-in {
       transform: .15s ease-in;
       transform: .15s ease-in,-webkit-transform .15s ease-in;
@@ -27,7 +36,20 @@
 
 }
 
-body {
+@mixin responsive-width($offset-base) {
+  @for $i from 0 through 4 {
+    $max-width: 700px + $i * 150px;
+    $offset: $i * $offset-base;
+    @media screen and (min-width: 1000px + $i * 200px) {
+      max-width: $max-width - $offset;
+      padding-left: calc((#{$fullwidth} - #{$max-width}) / 2);
+      padding-right: calc(((#{$fullwidth} - #{$max-width}) / #{$two}) - #{$offset});
+    }
+  }
+}
+
+body,
+p {
   margin: 0;
   padding: 0;
 }
@@ -47,25 +69,12 @@ a {
   text-decoration: none;
 }
 
-.responsive-width {
-  @media screen and (min-width: 1200px) {
-    max-width: 900px;
-  }
-  @media screen and (min-width: 1440px) {
-    max-width: 1100px;
-  }
-  @media screen and (min-width: 1920px) {
-    max-width: 1300px;
-  }
-}
-
 .App {
   color: #303D49;
   background: #f8f8f9;
   min-height: 100vh;
   font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
   "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei",
-  SimSun, sans-serif;
 }
 
 .clearfix::after {
@@ -83,23 +92,8 @@ a {
   color: #1c1b1b;
   transition: .2s;
   z-index: 99;
-  @extend .responsive-width;
-
-  @media screen and (min-width: 1200px) {
-    max-width: 900px;
-    padding-left: calc((100% - 900px) / 2);
-    padding-right: calc((100% - 900px) / 2);
-  }
-  @media screen and (min-width: 1440px) {
-    max-width: 1100px;
-    padding-left: calc((100% - 1100px) / 2);
-    padding-right: calc((100% - 1100px) / 2);
-  }
-  @media screen and (min-width: 1920px) {
-    max-width: 1300px;
-    padding-left: calc((100% - 1300px) / 2);
-    padding-right: calc((100% - 1300px) / 2);
-  }
+  @include responsive-width(0px);
+  font-family: "Lucida Grande";
 
   &.header-docked {
     padding-top: 0;
@@ -142,11 +136,7 @@ a {
     margin-left: 30px;
 
     a {
-      @include link-underline;
-
-      &::after {
-        background: #1c1b1b;
-      }
+      @include link-underline(#1c1b1b);
     } 
   }
 
@@ -159,7 +149,7 @@ a {
   height: 300px;
   margin: 0 auto;
   padding-top: 210px;
-  @extend .responsive-width;
+  @include responsive-width(0px);
 
   h1 {
     margin-bottom: 30px;
@@ -177,11 +167,7 @@ a {
     color: #42c5d8;
     font-size: 14px;
     text-transform: uppercase;
-    @include link-underline;
-
-    &::after {
-      background: #42c5d8;
-    }
+    @include link-underline(#42c5d8);
   }
 }
 
@@ -193,12 +179,59 @@ a {
 
 .main {
   height: 600px;
+  padding-top: 320px;
   margin-top: -160px;
   background-color: #fff;
+  @include responsive-width(30px);
+
+  .advantage {
+    .item {
+      margin-bottom: 45px;
+
+      h4 {
+        margin: 0;
+        margin-bottom: 15px;
+      }
+    }
+  }
 }
 
 .footer {
-  height: 500px;
+  padding-top: 116px;
+  padding-bottom: 135px;
   margin-top: 400px;
   background: linear-gradient(90deg,#1c1b1b 0,#1c1b1b 50%,transparent 0,transparent);
+  @include responsive-width(0px);
+
+  .footer-left {
+    color: #fff;
+    float: left;
+    margin-left: 80px;
+
+    .logo {
+      height: 40px;
+      line-height: 40px;
+      font-size: 28px;
+      font-weight: 300;
+      margin-bottom: 116px;
+      font-family: "Lucida Grande";
+    }
+
+    .nav {
+      font-weight: 300;
+      color: rgba(255, 255, 255, 0.70);
+      margin-bottom: 116px;
+
+      li {
+        height: 24px;
+        line-height: 24px;
+        margin-bottom: 15px;
+      }
+    }
+    
+    .copyright {
+      font-weight: 300;
+      color: rgba(255, 255, 255, 0.40);
+    }
+  }
 }

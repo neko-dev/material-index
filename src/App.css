@@ -1,4 +1,5 @@
-body {
+body,
+p {
   margin: 0;
   padding: 0; }
 
@@ -14,23 +15,11 @@ a {
   color: inherit;
   text-decoration: none; }
 
-@media screen and (min-width: 1200px) {
-  .responsive-width, .App-header, .jumbotron {
-    max-width: 900px; } }
-
-@media screen and (min-width: 1440px) {
-  .responsive-width, .App-header, .jumbotron {
-    max-width: 1100px; } }
-
-@media screen and (min-width: 1920px) {
-  .responsive-width, .App-header, .jumbotron {
-    max-width: 1300px; } }
-
 .App {
   color: #303D49;
   background: #f8f8f9;
   min-height: 100vh;
-  font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimSun, sans-serif; }
+  font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei"; }
 
 .clearfix::after {
   display: block;
@@ -45,22 +34,33 @@ a {
   padding-top: 40px;
   color: #1c1b1b;
   transition: .2s;
-  z-index: 99; }
+  z-index: 99;
+  font-family: "Lucida Grande"; }
+  @media screen and (min-width: 1000px) {
+    .App-header {
+      max-width: 700px;
+      padding-left: calc((100% - 700px) / 2);
+      padding-right: calc(((100% - 700px) / 2) - 0px); } }
   @media screen and (min-width: 1200px) {
     .App-header {
-      max-width: 900px;
-      padding-left: calc((100% - 900px) / 2);
-      padding-right: calc((100% - 900px) / 2); } }
-  @media screen and (min-width: 1440px) {
+      max-width: 850px;
+      padding-left: calc((100% - 850px) / 2);
+      padding-right: calc(((100% - 850px) / 2) - 0px); } }
+  @media screen and (min-width: 1400px) {
     .App-header {
-      max-width: 1100px;
-      padding-left: calc((100% - 1100px) / 2);
-      padding-right: calc((100% - 1100px) / 2); } }
-  @media screen and (min-width: 1920px) {
+      max-width: 1000px;
+      padding-left: calc((100% - 1000px) / 2);
+      padding-right: calc(((100% - 1000px) / 2) - 0px); } }
+  @media screen and (min-width: 1600px) {
+    .App-header {
+      max-width: 1150px;
+      padding-left: calc((100% - 1150px) / 2);
+      padding-right: calc(((100% - 1150px) / 2) - 0px); } }
+  @media screen and (min-width: 1800px) {
     .App-header {
       max-width: 1300px;
       padding-left: calc((100% - 1300px) / 2);
-      padding-right: calc((100% - 1300px) / 2); } }
+      padding-right: calc(((100% - 1300px) / 2) - 0px); } }
   .App-header.header-docked {
     padding-top: 0;
     background-color: #fff;
@@ -100,7 +100,9 @@ a {
         left: 0;
         right: 0;
         height: 2px;
+        background: #1c1b1b;
         -webkit-transform: scaleX(0);
+        -moz-transform: scaleX(0);
         transform: scaleX(0);
         transition: -webkit-transform 0.15s ease-in;
           transition-transform: .15s ease-in;
@@ -112,8 +114,6 @@ a {
         transform: scale(1);
         -webkit-transform-origin: left center;
         transform-origin: left center; }
-      .navbar-right .nav-item a::after {
-        background: #1c1b1b; }
   .navbar-right .nav-item:first-child {
     margin-left: 0; }
 
@@ -121,6 +121,31 @@ a {
   height: 300px;
   margin: 0 auto;
   padding-top: 210px; }
+  @media screen and (min-width: 1000px) {
+    .jumbotron {
+      max-width: 700px;
+      padding-left: calc((100% - 700px) / 2);
+      padding-right: calc(((100% - 700px) / 2) - 0px); } }
+  @media screen and (min-width: 1200px) {
+    .jumbotron {
+      max-width: 850px;
+      padding-left: calc((100% - 850px) / 2);
+      padding-right: calc(((100% - 850px) / 2) - 0px); } }
+  @media screen and (min-width: 1400px) {
+    .jumbotron {
+      max-width: 1000px;
+      padding-left: calc((100% - 1000px) / 2);
+      padding-right: calc(((100% - 1000px) / 2) - 0px); } }
+  @media screen and (min-width: 1600px) {
+    .jumbotron {
+      max-width: 1150px;
+      padding-left: calc((100% - 1150px) / 2);
+      padding-right: calc(((100% - 1150px) / 2) - 0px); } }
+  @media screen and (min-width: 1800px) {
+    .jumbotron {
+      max-width: 1300px;
+      padding-left: calc((100% - 1300px) / 2);
+      padding-right: calc(((100% - 1300px) / 2) - 0px); } }
   .jumbotron h1 {
     margin-bottom: 30px; }
     .jumbotron h1 span {
@@ -140,7 +165,9 @@ a {
       left: 0;
       right: 0;
       height: 2px;
+      background: #42c5d8;
       -webkit-transform: scaleX(0);
+      -moz-transform: scaleX(0);
       transform: scaleX(0);
       transition: -webkit-transform 0.15s ease-in;
         transition-transform: .15s ease-in;
@@ -152,8 +179,6 @@ a {
       transform: scale(1);
       -webkit-transform-origin: left center;
       transform-origin: left center; }
-    .jumbotron .download-link::after {
-      background: #42c5d8; }
 
 .presentation {
   width: 850px;
@@ -162,10 +187,89 @@ a {
 
 .main {
   height: 600px;
+  padding-top: 320px;
   margin-top: -160px;
   background-color: #fff; }
+  @media screen and (min-width: 1000px) {
+    .main {
+      max-width: 700px;
+      padding-left: calc((100% - 700px) / 2);
+      padding-right: calc(((100% - 700px) / 2) - 0px); } }
+  @media screen and (min-width: 1200px) {
+    .main {
+      max-width: 820px;
+      padding-left: calc((100% - 850px) / 2);
+      padding-right: calc(((100% - 850px) / 2) - 30px); } }
+  @media screen and (min-width: 1400px) {
+    .main {
+      max-width: 940px;
+      padding-left: calc((100% - 1000px) / 2);
+      padding-right: calc(((100% - 1000px) / 2) - 60px); } }
+  @media screen and (min-width: 1600px) {
+    .main {
+      max-width: 1060px;
+      padding-left: calc((100% - 1150px) / 2);
+      padding-right: calc(((100% - 1150px) / 2) - 90px); } }
+  @media screen and (min-width: 1800px) {
+    .main {
+      max-width: 1180px;
+      padding-left: calc((100% - 1300px) / 2);
+      padding-right: calc(((100% - 1300px) / 2) - 120px); } }
+  .main .advantage .item {
+    margin-bottom: 45px; }
+    .main .advantage .item h4 {
+      margin: 0;
+      margin-bottom: 15px; }
 
 .footer {
-  height: 500px;
+  padding-top: 116px;
+  padding-bottom: 135px;
   margin-top: 400px;
   background: linear-gradient(90deg, #1c1b1b 0, #1c1b1b 50%, transparent 0, transparent); }
+  @media screen and (min-width: 1000px) {
+    .footer {
+      max-width: 700px;
+      padding-left: calc((100% - 700px) / 2);
+      padding-right: calc(((100% - 700px) / 2) - 0px); } }
+  @media screen and (min-width: 1200px) {
+    .footer {
+      max-width: 850px;
+      padding-left: calc((100% - 850px) / 2);
+      padding-right: calc(((100% - 850px) / 2) - 0px); } }
+  @media screen and (min-width: 1400px) {
+    .footer {
+      max-width: 1000px;
+      padding-left: calc((100% - 1000px) / 2);
+      padding-right: calc(((100% - 1000px) / 2) - 0px); } }
+  @media screen and (min-width: 1600px) {
+    .footer {
+      max-width: 1150px;
+      padding-left: calc((100% - 1150px) / 2);
+      padding-right: calc(((100% - 1150px) / 2) - 0px); } }
+  @media screen and (min-width: 1800px) {
+    .footer {
+      max-width: 1300px;
+      padding-left: calc((100% - 1300px) / 2);
+      padding-right: calc(((100% - 1300px) / 2) - 0px); } }
+  .footer .footer-left {
+    color: #fff;
+    float: left;
+    margin-left: 80px; }
+    .footer .footer-left .logo {
+      height: 40px;
+      line-height: 40px;
+      font-size: 28px;
+      font-weight: 300;
+      margin-bottom: 116px;
+      font-family: "Lucida Grande"; }
+    .footer .footer-left .nav {
+      font-weight: 300;
+      color: rgba(255, 255, 255, 0.7);
+      margin-bottom: 116px; }
+      .footer .footer-left .nav li {
+        height: 24px;
+        line-height: 24px;
+        margin-bottom: 15px; }
+    .footer .footer-left .copyright {
+      font-weight: 300;
+      color: rgba(255, 255, 255, 0.4); }
