@@ -184,6 +184,7 @@ a {
   @include responsive-width(30px);
 
   .advantage {
+    margin: 0 -20px;
 
     .item-wrap {
       margin-bottom: 50px;
@@ -191,16 +192,25 @@ a {
       float: left;
 
       .item {
-        margin: 0 15px;
+        margin: 0 20px;
         transition: transform .3s ease-out;
         
         img {
           width: 100%
         }
-  
-        h4 {
-          margin: 0;
-          margin-bottom: 15px;
+
+        .description {
+          padding: 15px 30px 30px;
+          
+          h4 {
+            margin: 0;
+            margin-bottom: 15px;
+          }
+
+          span {
+            display: block;
+            color: rgba(28, 27, 27, .6);
+          }
         }
 
         &:hover {

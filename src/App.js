@@ -49,37 +49,75 @@ class App extends Component {
           <div className="advantage clearfix">
             <div className="item-wrap">
               <div className="item">
-                <img src={require('./img/advantage/4.jpg')} />
-                <h4>优异的加载性能</h4>
-                <p>Pagespeed 得分 A (100%)，Yslow 得分 A (90±5%)</p>
-              </div>
-            </div>
-            <div className="item-wrap">
-              <div className="item">
                 <img src={require('./img/advantage/3.jpg')} />
-                <h4>SEO</h4>
-                <p>专门设计的 Meta tag，结构化数据，OpenGraph，满足搜索引擎优化需要</p>
+                <div className="description">
+                  <h4>搜索引擎优化 (SEO)</h4>
+                  <p>
+                    <span>Meta tag，结构化数据，OpenGraph...</span>
+                    <span>满足搜索引擎优化需要</span>
+                  </p>
+                </div>
               </div>
             </div>
             <div className="item-wrap">
               <div className="item">
-                <img src={require('./img/advantage/1.jpg')} />
-                <h4>多种语言支持</h4>
-                <p>感谢国际友人的贡献，Material 现已支持 10 种语言</p>
+                <img src={require('./img/advantage/4.jpg')} />
+                <div className="description">
+                  <h4>优异的加载性能</h4>
+                  <p>
+                    <span>Pagespeed 得分 A (100%)，</span>
+                    <span>Yslow 得分 A (90±5%)</span>
+                  </p>
+                </div>
               </div>
             </div>
             <div className="item-wrap">
               <div className="item">
                 <img src={require('./img/advantage/2.jpg')} />
-                <h4>众多功能</h4>
-                <p>两种代码高亮插件，四种独立页面，主题自带 CDN，自定义背景与颜色风格</p>
+                <div className="description">
+                  <h4>众多功能</h4>
+                  <p>
+                    <span>两种代码高亮插件，四种独立页面，</span>
+                    <span>主题自带 CDN</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="item-wrap">
+              <div className="item">
+                <img src={require('./img/advantage/1.jpg')} />
+                <div className="description">
+                  <h4>多种语言支持</h4>
+                  <p>
+                    <span>感谢国际友人的贡献，</span>
+                    <span>Material 现已支持 10 种语言</span>
+                  </p>
+                </div>
               </div>
             </div>
             <div className="item-wrap">
               <div className="item">
                 <img src={require('./img/advantage/5.jpg')} />
-                <h4>第三方服务</h4>
-                <p>三款网站统计服务，六款评论系统</p>
+                <div className="description">
+                  <h4>第三方服务</h4>
+                  <p>
+                    <span>三款网站统计服务，</span>
+                    <span>六款评论系统</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="item-wrap">
+              <div className="item">
+                {/* <img src={require('./img/advantage/7.gif')} /> */}
+                <img src={require('./img/advantage/6.jpg')} />
+                <div className="description">
+                  <h4>一种风格，无限可能</h4>
+                  <p>
+                    <span>基于 Material Design，</span>
+                    <span>可自定义的背景与颜色风格</span>
+                  </p>
+                </div>
               </div>
             </div>
           </div>
