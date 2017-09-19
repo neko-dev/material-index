@@ -173,25 +173,43 @@ a {
 
 .presentation {
   width: 850px;
-  height: 525px;
+  line-height: 0;
   margin: 0 auto;
 }
 
 .main {
-  height: 600px;
   padding-top: 320px;
   margin-top: -160px;
   background-color: #fff;
   @include responsive-width(30px);
 
   .advantage {
-    .item {
-      margin-bottom: 45px;
 
-      h4 {
-        margin: 0;
-        margin-bottom: 15px;
+    .item-wrap {
+      margin-bottom: 50px;
+      width: 50%;
+      float: left;
+
+      .item {
+        margin: 0 15px;
+        transition: transform .3s ease-out;
+        
+        img {
+          width: 100%
+        }
+  
+        h4 {
+          margin: 0;
+          margin-bottom: 15px;
+        }
+
+        &:hover {
+          box-shadow: 2px 8px 20px 0 rgba(31,32,68,.25);
+          -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+        }
       }
+
     }
   }
 }
@@ -200,13 +218,14 @@ a {
   padding-top: 116px;
   padding-bottom: 135px;
   margin-top: 400px;
-  background: linear-gradient(90deg,#1c1b1b 0,#1c1b1b 50%,transparent 0,transparent);
+  background: linear-gradient(90deg,#1c1b1b 0,#1c1b1b 51%,transparent 0,transparent);
   @include responsive-width(0px);
 
   .footer-left {
     color: #fff;
     float: left;
     margin-left: 80px;
+    font-family: "Lucida Grande";
 
     .logo {
       height: 40px;
@@ -219,19 +238,28 @@ a {
 
     .nav {
       font-weight: 300;
-      color: rgba(255, 255, 255, 0.70);
+      color: rgba(255, 255, 255, 0.65);
       margin-bottom: 116px;
 
       li {
         height: 24px;
         line-height: 24px;
         margin-bottom: 15px;
+
+        a {
+          @include link-underline(rgba(255, 255, 255, 0.65));
+        }
       }
     }
     
     .copyright {
       font-weight: 300;
-      color: rgba(255, 255, 255, 0.40);
+      color: rgba(255, 255, 255, 0.4);
+
+      .viosey {
+        color: rgba(255, 255, 255, 0.5);
+        @include link-underline(rgba(255, 255, 255, 0.5));
+      }
     }
   }
 }

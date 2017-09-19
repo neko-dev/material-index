@@ -182,11 +182,10 @@ a {
 
 .presentation {
   width: 850px;
-  height: 525px;
+  line-height: 0;
   margin: 0 auto; }
 
 .main {
-  height: 600px;
   padding-top: 320px;
   margin-top: -160px;
   background-color: #fff; }
@@ -215,17 +214,28 @@ a {
       max-width: 1180px;
       padding-left: calc((100% - 1300px) / 2);
       padding-right: calc(((100% - 1300px) / 2) - 120px); } }
-  .main .advantage .item {
-    margin-bottom: 45px; }
-    .main .advantage .item h4 {
-      margin: 0;
-      margin-bottom: 15px; }
+  .main .advantage .item-wrap {
+    margin-bottom: 50px;
+    width: 50%;
+    float: left; }
+    .main .advantage .item-wrap .item {
+      margin: 0 15px;
+      transition: transform .3s ease-out; }
+      .main .advantage .item-wrap .item img {
+        width: 100%; }
+      .main .advantage .item-wrap .item h4 {
+        margin: 0;
+        margin-bottom: 15px; }
+      .main .advantage .item-wrap .item:hover {
+        box-shadow: 2px 8px 20px 0 rgba(31, 32, 68, 0.25);
+        -webkit-transform: scale(1.01);
+        transform: scale(1.01); }
 
 .footer {
   padding-top: 116px;
   padding-bottom: 135px;
   margin-top: 400px;
-  background: linear-gradient(90deg, #1c1b1b 0, #1c1b1b 50%, transparent 0, transparent); }
+  background: linear-gradient(90deg, #1c1b1b 0, #1c1b1b 51%, transparent 0, transparent); }
   @media screen and (min-width: 1000px) {
     .footer {
       max-width: 700px;
@@ -254,7 +264,8 @@ a {
   .footer .footer-left {
     color: #fff;
     float: left;
-    margin-left: 80px; }
+    margin-left: 80px;
+    font-family: "Lucida Grande"; }
     .footer .footer-left .logo {
       height: 40px;
       line-height: 40px;
@@ -264,12 +275,61 @@ a {
       font-family: "Lucida Grande"; }
     .footer .footer-left .nav {
       font-weight: 300;
-      color: rgba(255, 255, 255, 0.7);
+      color: rgba(255, 255, 255, 0.65);
       margin-bottom: 116px; }
       .footer .footer-left .nav li {
         height: 24px;
         line-height: 24px;
         margin-bottom: 15px; }
+        .footer .footer-left .nav li a {
+          position: relative; }
+          .footer .footer-left .nav li a::after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: calc(100% + 8px);
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: rgba(255, 255, 255, 0.65);
+            -webkit-transform: scaleX(0);
+            -moz-transform: scaleX(0);
+            transform: scaleX(0);
+            transition: -webkit-transform 0.15s ease-in;
+              transition-transform: .15s ease-in;
+              transition-transform: .15s ease-in,-webkit-transform .15s ease-in;
+            -webkit-transform-origin: right center;
+            transform-origin: right center; }
+          .footer .footer-left .nav li a:hover::after {
+            -webkit-transform: scale(1);
+            transform: scale(1);
+            -webkit-transform-origin: left center;
+            transform-origin: left center; }
     .footer .footer-left .copyright {
       font-weight: 300;
       color: rgba(255, 255, 255, 0.4); }
+      .footer .footer-left .copyright .viosey {
+        color: rgba(255, 255, 255, 0.5);
+        position: relative; }
+        .footer .footer-left .copyright .viosey::after {
+          content: "";
+          display: block;
+          position: absolute;
+          top: calc(100% + 8px);
+          left: 0;
+          right: 0;
+          height: 2px;
+          background: rgba(255, 255, 255, 0.5);
+          -webkit-transform: scaleX(0);
+          -moz-transform: scaleX(0);
+          transform: scaleX(0);
+          transition: -webkit-transform 0.15s ease-in;
+            transition-transform: .15s ease-in;
+            transition-transform: .15s ease-in,-webkit-transform .15s ease-in;
+          -webkit-transform-origin: right center;
+          transform-origin: right center; }
+        .footer .footer-left .copyright .viosey:hover::after {
+          -webkit-transform: scale(1);
+          transform: scale(1);
+          -webkit-transform-origin: left center;
+          transform-origin: left center; }
