@@ -241,7 +241,7 @@ a {
 .footer {
   padding-top: 116px;
   padding-bottom: 135px;
-  margin-top: 400px;
+  margin-top: 300px;
   background: linear-gradient(90deg, #1c1b1b 0, #1c1b1b 51%, transparent 0, transparent); }
   @media screen and (min-width: 1000px) {
     .footer {

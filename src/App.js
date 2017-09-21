@@ -25,7 +25,7 @@ class App extends Component {
             </div>
             <ul className="navbar-right clearfix">
               <li className="nav-item"><a href="https://blog.viosey.com" target="_black">Demo</a></li>
-              <li className="nav-item"><a href="/docs" target="_black">Docs</a></li>
+              <li className="nav-item"><a href="/docs/" target="_black">Docs</a></li>
               <li className="nav-item"><a href="https://github.com/viosey/hexo-theme-material" target="_black">Github</a></li>
             </ul>
           </div>
@@ -49,7 +49,7 @@ class App extends Component {
           <div className="advantage clearfix">
             <div className="item-wrap">
               <div className="item">
-                <img src={require('./img/advantage/3.jpg')} />
+                <img src="https://alimg.viosey.com/mt/advantage/seo.jpg" alt="[搜索引擎优化]" />
                 <div className="description">
                   <h4>搜索引擎优化 (SEO)</h4>
                   <p>
@@ -61,7 +61,7 @@ class App extends Component {
             </div>
             <div className="item-wrap">
               <div className="item">
-                <img src={require('./img/advantage/4.jpg')} />
+                <img src="https://alimg.viosey.com/mt/advantage/fast.jpg" alt="[优异的加载性能]" />
                 <div className="description">
                   <h4>优异的加载性能</h4>
                   <p>
@@ -73,7 +73,7 @@ class App extends Component {
             </div>
             <div className="item-wrap">
               <div className="item">
-                <img src={require('./img/advantage/2.jpg')} />
+                <img src="https://alimg.viosey.com/mt/advantage/function.jpg" alt="[众多功能]" />
                 <div className="description">
                   <h4>众多功能</h4>
                   <p>
@@ -85,7 +85,7 @@ class App extends Component {
             </div>
             <div className="item-wrap">
               <div className="item">
-                <img src={require('./img/advantage/1.jpg')} />
+                <img src="https://alimg.viosey.com/mt/advantage/lang.jpg" alt="[多种语言支持]" />
                 <div className="description">
                   <h4>多种语言支持</h4>
                   <p>
@@ -97,7 +97,7 @@ class App extends Component {
             </div>
             <div className="item-wrap">
               <div className="item">
-                <img src={require('./img/advantage/5.jpg')} />
+                <img src="https://alimg.viosey.com/mt/advantage/third-party.jpg" alt="[第三方服务]" />
                 <div className="description">
                   <h4>第三方服务</h4>
                   <p>
@@ -109,8 +109,7 @@ class App extends Component {
             </div>
             <div className="item-wrap">
               <div className="item">
-                {/* <img src={require('./img/advantage/7.gif')} /> */}
-                <img src={require('./img/advantage/6.jpg')} />
+                <img src="https://alimg.viosey.com/mt/advantage/infinite.jpg" alt="[一种风格，无限可能]" />
                 <div className="description">
                   <h4>一种风格，无限可能</h4>
                   <p>
@@ -131,7 +130,7 @@ class App extends Component {
               <li><a href="https://github.com/viosey/hexo-theme-material/releases" target="_black">Changelog</a></li>
               <li><a href="https://github.com/neko-dev" target="_black">Team</a></li>
             </ul>
-            <div className="copyright">© 2017 <a className="viosey" href="https://viosey.com" target="_blank">viosey</a></div>
+            <div className="copyright">© 2017 <a className="viosey" href="https://viosey.com" target="_blank" rel="noopener noreferrer" >viosey</a></div>
           </div>
         </div>
       </div>
