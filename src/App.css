@@ -29,6 +29,7 @@ a {
   visibility: hidden; }
 
 .App-header {
+  height: 80px;
   width: 100%;
   position: fixed;
   padding-top: 40px;
@@ -36,6 +37,41 @@ a {
   transition: .2s;
   z-index: 99;
   font-family: "Lucida Grande"; }
+  @media screen and (min-width: 300px) {
+    .App-header {
+      max-width: 290px;
+      padding-left: calc((100% - 290px) / 2);
+      padding-right: calc(((100% - 290px) / 2) - 0px); } }
+  @media screen and (min-width: 400px) {
+    .App-header {
+      max-width: 390px;
+      padding-left: calc((100% - 390px) / 2);
+      padding-right: calc(((100% - 390px) / 2) - 0px); } }
+  @media screen and (min-width: 500px) {
+    .App-header {
+      max-width: 490px;
+      padding-left: calc((100% - 490px) / 2);
+      padding-right: calc(((100% - 490px) / 2) - 0px); } }
+  @media screen and (min-width: 600px) {
+    .App-header {
+      max-width: 500px;
+      padding-left: calc((100% - 500px) / 2);
+      padding-right: calc(((100% - 500px) / 2) - 0px); } }
+  @media screen and (min-width: 700px) {
+    .App-header {
+      max-width: 600px;
+      padding-left: calc((100% - 600px) / 2);
+      padding-right: calc(((100% - 600px) / 2) - 0px); } }
+  @media screen and (min-width: 800px) {
+    .App-header {
+      max-width: 700px;
+      padding-left: calc((100% - 700px) / 2);
+      padding-right: calc(((100% - 700px) / 2) - 0px); } }
+  @media screen and (min-width: 900px) {
+    .App-header {
+      max-width: 800px;
+      padding-left: calc((100% - 800px) / 2);
+      padding-right: calc(((100% - 800px) / 2) - 0px); } }
   @media screen and (min-width: 1000px) {
     .App-header {
       max-width: 700px;
@@ -121,6 +157,41 @@ a {
   height: 300px;
   margin: 0 auto;
   padding-top: 210px; }
+  @media screen and (min-width: 300px) {
+    .jumbotron {
+      max-width: 290px;
+      padding-left: calc((100% - 290px) / 2);
+      padding-right: calc(((100% - 290px) / 2) - 0px); } }
+  @media screen and (min-width: 400px) {
+    .jumbotron {
+      max-width: 390px;
+      padding-left: calc((100% - 390px) / 2);
+      padding-right: calc(((100% - 390px) / 2) - 0px); } }
+  @media screen and (min-width: 500px) {
+    .jumbotron {
+      max-width: 490px;
+      padding-left: calc((100% - 490px) / 2);
+      padding-right: calc(((100% - 490px) / 2) - 0px); } }
+  @media screen and (min-width: 600px) {
+    .jumbotron {
+      max-width: 500px;
+      padding-left: calc((100% - 500px) / 2);
+      padding-right: calc(((100% - 500px) / 2) - 0px); } }
+  @media screen and (min-width: 700px) {
+    .jumbotron {
+      max-width: 600px;
+      padding-left: calc((100% - 600px) / 2);
+      padding-right: calc(((100% - 600px) / 2) - 0px); } }
+  @media screen and (min-width: 800px) {
+    .jumbotron {
+      max-width: 700px;
+      padding-left: calc((100% - 700px) / 2);
+      padding-right: calc(((100% - 700px) / 2) - 0px); } }
+  @media screen and (min-width: 900px) {
+    .jumbotron {
+      max-width: 800px;
+      padding-left: calc((100% - 800px) / 2);
+      padding-right: calc(((100% - 800px) / 2) - 0px); } }
   @media screen and (min-width: 1000px) {
     .jumbotron {
       max-width: 700px;
@@ -183,12 +254,51 @@ a {
 .presentation {
   width: 850px;
   line-height: 0;
-  margin: 0 auto; }
+  margin: 0 auto;
+  overflow: hidden; }
+  @media screen and (max-width: 865px) {
+    .presentation {
+      width: 100%; } }
 
 .main {
   padding-top: 320px;
   margin-top: -160px;
   background-color: #fff; }
+  @media screen and (min-width: 300px) {
+    .main {
+      max-width: 290px;
+      padding-left: calc((100% - 290px) / 2);
+      padding-right: calc(((100% - 290px) / 2) - 0px); } }
+  @media screen and (min-width: 400px) {
+    .main {
+      max-width: 390px;
+      padding-left: calc((100% - 390px) / 2);
+      padding-right: calc(((100% - 390px) / 2) - 0px); } }
+  @media screen and (min-width: 500px) {
+    .main {
+      max-width: 490px;
+      padding-left: calc((100% - 490px) / 2);
+      padding-right: calc(((100% - 490px) / 2) - 0px); } }
+  @media screen and (min-width: 600px) {
+    .main {
+      max-width: 500px;
+      padding-left: calc((100% - 500px) / 2);
+      padding-right: calc(((100% - 500px) / 2) - 0px); } }
+  @media screen and (min-width: 700px) {
+    .main {
+      max-width: 600px;
+      padding-left: calc((100% - 600px) / 2);
+      padding-right: calc(((100% - 600px) / 2) - 0px); } }
+  @media screen and (min-width: 800px) {
+    .main {
+      max-width: 700px;
+      padding-left: calc((100% - 700px) / 2);
+      padding-right: calc(((100% - 700px) / 2) - 0px); } }
+  @media screen and (min-width: 900px) {
+    .main {
+      max-width: 800px;
+      padding-left: calc((100% - 800px) / 2);
+      padding-right: calc(((100% - 800px) / 2) - 0px); } }
   @media screen and (min-width: 1000px) {
     .main {
       max-width: 700px;
@@ -214,12 +324,22 @@ a {
       max-width: 1180px;
       padding-left: calc((100% - 1300px) / 2);
       padding-right: calc(((100% - 1300px) / 2) - 120px); } }
+  @media screen and (max-width: 800px) {
+    .main {
+      margin-top: -260px; } }
   .main .advantage {
     margin: 0 -20px; }
     .main .advantage .item-wrap {
       margin-bottom: 50px;
       width: 50%;
       float: left; }
+      @media screen and (max-width: 800px) {
+        .main .advantage .item-wrap {
+          width: 80%;
+          max-width: 500px;
+          margin: 0 auto;
+          margin-bottom: 50px;
+          float: none; } }
       .main .advantage .item-wrap .item {
         margin: 0 20px;
         transition: transform .3s ease-out; }
@@ -243,6 +363,41 @@ a {
   padding-bottom: 135px;
   margin-top: 300px;
   background: linear-gradient(90deg, #1c1b1b 0, #1c1b1b 51%, transparent 0, transparent); }
+  @media screen and (min-width: 300px) {
+    .footer {
+      max-width: 290px;
+      padding-left: calc((100% - 290px) / 2);
+      padding-right: calc(((100% - 290px) / 2) - 0px); } }
+  @media screen and (min-width: 400px) {
+    .footer {
+      max-width: 390px;
+      padding-left: calc((100% - 390px) / 2);
+      padding-right: calc(((100% - 390px) / 2) - 0px); } }
+  @media screen and (min-width: 500px) {
+    .footer {
+      max-width: 490px;
+      padding-left: calc((100% - 490px) / 2);
+      padding-right: calc(((100% - 490px) / 2) - 0px); } }
+  @media screen and (min-width: 600px) {
+    .footer {
+      max-width: 500px;
+      padding-left: calc((100% - 500px) / 2);
+      padding-right: calc(((100% - 500px) / 2) - 0px); } }
+  @media screen and (min-width: 700px) {
+    .footer {
+      max-width: 600px;
+      padding-left: calc((100% - 600px) / 2);
+      padding-right: calc(((100% - 600px) / 2) - 0px); } }
+  @media screen and (min-width: 800px) {
+    .footer {
+      max-width: 700px;
+      padding-left: calc((100% - 700px) / 2);
+      padding-right: calc(((100% - 700px) / 2) - 0px); } }
+  @media screen and (min-width: 900px) {
+    .footer {
+      max-width: 800px;
+      padding-left: calc((100% - 800px) / 2);
+      padding-right: calc(((100% - 800px) / 2) - 0px); } }
   @media screen and (min-width: 1000px) {
     .footer {
       max-width: 700px;
@@ -268,6 +423,10 @@ a {
       max-width: 1300px;
       padding-left: calc((100% - 1300px) / 2);
       padding-right: calc(((100% - 1300px) / 2) - 0px); } }
+  @media screen and (max-width: 800px) {
+    .footer {
+      margin-top: 150px;
+      background: linear-gradient(90deg, #1c1b1b 0, #1c1b1b 100%, transparent 0, transparent); } }
   .footer .footer-left {
     color: #fff;
     float: left;
@@ -276,10 +435,9 @@ a {
     .footer .footer-left .logo {
       height: 40px;
       line-height: 40px;
-      font-size: 28px;
+      font-size: 26px;
       font-weight: 300;
-      margin-bottom: 116px;
-      font-family: "Lucida Grande"; }
+      margin-bottom: 116px; }
     .footer .footer-left .nav {
       font-weight: 300;
       color: rgba(255, 255, 255, 0.65);

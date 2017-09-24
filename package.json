@@ -6,7 +6,8 @@
     "jquery": "^3.2.1",
     "node-sass-chokidar": "^0.0.3",
     "react": "^15.6.1",
-    "react-dom": "^15.6.1"
+    "react-dom": "^15.6.1",
+    "react-lazyload": "^2.2.7"
   },
   "devDependencies": {
     "react-scripts": "1.0.13"

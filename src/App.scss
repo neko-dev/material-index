@@ -37,6 +37,24 @@ $two: 2;
 }
 
 @mixin responsive-width($offset-base) {
+  @for $i from 0 through 2 {
+    $max-width: 290px + $i * 100px;
+    $offset: 0px;
+    @media screen and (min-width: 300px + $i * 100px) {
+      max-width: $max-width;
+      padding-left: calc((#{$fullwidth} - #{$max-width}) / 2);
+      padding-right: calc(((#{$fullwidth} - #{$max-width}) / #{$two}) - #{$offset});
+    }
+  }
+  @for $i from 0 through 3 {
+    $max-width: 500px + $i * 100px;
+    $offset: 0px;
+    @media screen and (min-width: 600px + $i * 100px) {
+      max-width: $max-width;
+      padding-left: calc((#{$fullwidth} - #{$max-width}) / 2);
+      padding-right: calc(((#{$fullwidth} - #{$max-width}) / #{$two}) - #{$offset});
+    }
+  }
   @for $i from 0 through 4 {
     $max-width: 700px + $i * 150px;
     $offset: $i * $offset-base;
@@ -86,6 +104,7 @@ a {
 }
 
 .App-header{
+  height: 80px;
   width: 100%;
   position: fixed;
   padding-top: 40px;
@@ -175,6 +194,10 @@ a {
   width: 850px;
   line-height: 0;
   margin: 0 auto;
+  overflow: hidden;
+  @media screen and (max-width: 865px) {
+    width: 100%;
+  }
 }
 
 .main {
@@ -182,6 +205,9 @@ a {
   margin-top: -160px;
   background-color: #fff;
   @include responsive-width(30px);
+  @media screen and (max-width: 800px) {
+    margin-top: -260px;
+  }
 
   .advantage {
     margin: 0 -20px;
@@ -190,6 +216,14 @@ a {
       margin-bottom: 50px;
       width: 50%;
       float: left;
+
+      @media screen and (max-width: 800px) {
+        width: 80%;
+        max-width: 500px;
+        margin: 0 auto;
+        margin-bottom: 50px;
+        float: none;
+      }
 
       .item {
         margin: 0 20px;
@@ -230,6 +264,10 @@ a {
   margin-top: 300px;
   background: linear-gradient(90deg,#1c1b1b 0,#1c1b1b 51%,transparent 0,transparent);
   @include responsive-width(0px);
+  @media screen and (max-width: 800px) {
+    margin-top: 150px;
+    background: linear-gradient(90deg,#1c1b1b 0,#1c1b1b 100%,transparent 0,transparent);
+  }
 
   .footer-left {
     color: #fff;
@@ -240,10 +278,9 @@ a {
     .logo {
       height: 40px;
       line-height: 40px;
-      font-size: 28px;
+      font-size: 26px;
       font-weight: 300;
       margin-bottom: 116px;
-      font-family: "Lucida Grande";
     }
 
     .nav {
