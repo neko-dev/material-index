@@ -43,7 +43,7 @@ class App extends Component {
         </div>
 
         <div className="presentation">
-          <img src={require('./img/render_phone.png')} alt="material-render-phone"/>
+          <img src="https://alimg.viosey.com/mt/render_phone.png" alt="material-render-phone"/>
         </div>
 
         <div className="main">
