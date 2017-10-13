@@ -43,14 +43,14 @@ class App extends Component {
         </div>
 
         <div className="presentation">
-          <img src="https://alimg.viosey.com/mt/render_phone.png" alt="material-render-phone"/>
+          <img src="https://alicdn.viosey.com/img/mt/render_phone.png" alt="material-render-phone"/>
         </div>
 
         <div className="main">
           <div className="advantage clearfix">
               <div className="item-wrap">
                 <div className="item">
-                  <img src="https://alimg.viosey.com/mt/advantage/seo.jpg" alt="[搜索引擎优化]" />
+                  <img src="https://alicdn.viosey.com/img/mt/advantage/seo.jpg" alt="[搜索引擎优化]" />
                   <div className="description">
                     <h4>搜索引擎优化 (SEO)</h4>
                     <p>
@@ -62,7 +62,7 @@ class App extends Component {
               </div>
               <div className="item-wrap">
                 <div className="item">
-                  <img src="https://alimg.viosey.com/mt/advantage/fast.jpg" alt="[优异的加载性能]" />
+                  <img src="https://alicdn.viosey.com/img/mt/advantage/fast.jpg" alt="[优异的加载性能]" />
                   <div className="description">
                     <h4>优异的加载性能</h4>
                     <p>
@@ -74,7 +74,7 @@ class App extends Component {
               </div>
               <div className="item-wrap">
                 <div className="item">
-                  <img src="https://alimg.viosey.com/mt/advantage/function.jpg" alt="[众多功能]" />
+                  <img src="https://alicdn.viosey.com/img/mt/advantage/function.jpg" alt="[众多功能]" />
                   <div className="description">
                     <h4>众多功能</h4>
                     <p>
@@ -86,7 +86,7 @@ class App extends Component {
               </div>
               <div className="item-wrap">
                 <div className="item">
-                  <img src="https://alimg.viosey.com/mt/advantage/lang.jpg" alt="[多种语言支持]" />
+                  <img src="https://alicdn.viosey.com/img/mt/advantage/lang.jpg" alt="[多种语言支持]" />
                   <div className="description">
                     <h4>多种语言支持</h4>
                     <p>
@@ -98,7 +98,7 @@ class App extends Component {
               </div>
               <div className="item-wrap">
                 <div className="item">
-                  <img src="https://alimg.viosey.com/mt/advantage/third-party.jpg" alt="[第三方服务]" />
+                  <img src="https://alicdn.viosey.com/img/mt/advantage/third-party.jpg" alt="[第三方服务]" />
                   <div className="description">
                     <h4>第三方服务</h4>
                     <p>
@@ -110,7 +110,7 @@ class App extends Component {
               </div>
               <div className="item-wrap">
                 <div className="item">
-                  <img src="https://alimg.viosey.com/mt/advantage/infinite.jpg" alt="[一种风格，无限可能]" />
+                  <img src="https://alicdn.viosey.com/img/mt/advantage/infinite.jpg" alt="[一种风格，无限可能]" />
                   <div className="description">
                     <h4>一种风格，无限可能</h4>
                     <p>
