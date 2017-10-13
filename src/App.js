@@ -52,10 +52,10 @@ class App extends Component {
                 <div className="item">
                   <img src="https://alicdn.viosey.com/img/mt/advantage/seo.jpg" alt="[搜索引擎优化]" />
                   <div className="description">
-                    <h4>搜索引擎优化 (SEO)</h4>
+                    <h4>SEO</h4>
                     <p>
-                      <span>Meta tag，结构化数据，OpenGraph...</span>
-                      <span>满足搜索引擎优化需要</span>
+                      <span>Meta tag, Structured data, OpenGraph</span>
+                      <span>Meet the needs of SEO</span>
                     </p>
                   </div>
                 </div>
@@ -64,10 +64,10 @@ class App extends Component {
                 <div className="item">
                   <img src="https://alicdn.viosey.com/img/mt/advantage/fast.jpg" alt="[优异的加载性能]" />
                   <div className="description">
-                    <h4>优异的加载性能</h4>
+                    <h4>Excellent loading performance</h4>
                     <p>
-                      <span>Yslow 得分 A (90±5%)，</span>
-                      <span>Pagespeed 得分 A (100%)</span>
+                      <span>Yslow Score A (90±5%)</span>
+                      <span>Pagespeed Score A (100%)</span>
                     </p>
                   </div>
                 </div>
@@ -76,10 +76,10 @@ class App extends Component {
                 <div className="item">
                   <img src="https://alicdn.viosey.com/img/mt/advantage/function.jpg" alt="[众多功能]" />
                   <div className="description">
-                    <h4>众多功能</h4>
+                    <h4>Many functions</h4>
                     <p>
-                      <span>两种代码高亮插件，四种独立页面，</span>
-                      <span>主题自带 CDN...</span>
+                      <span>Two code highlight plug-in, built-in CDN</span>
+                      <span>Four distinctive pages</span>
                     </p>
                   </div>
                 </div>
@@ -88,10 +88,10 @@ class App extends Component {
                 <div className="item">
                   <img src="https://alicdn.viosey.com/img/mt/advantage/lang.jpg" alt="[多种语言支持]" />
                   <div className="description">
-                    <h4>多种语言支持</h4>
+                    <h4>Multilingual support</h4>
                     <p>
-                      <span>感谢国际友人的贡献，</span>
-                      <span>Material 现已支持 10 种语言</span>
+                      <span>Material is now available in 10 languages</span>
+                      <span>More languages are waiting for you</span>
                     </p>
                   </div>
                 </div>
@@ -100,10 +100,10 @@ class App extends Component {
                 <div className="item">
                   <img src="https://alicdn.viosey.com/img/mt/advantage/third-party.jpg" alt="[第三方服务]" />
                   <div className="description">
-                    <h4>第三方服务</h4>
+                    <h4>Third party service</h4>
                     <p>
-                      <span>三款网站统计服务，</span>
-                      <span>六款评论系统</span>
+                      <span>Three website analytics services</span>
+                      <span>Six comment systems</span>
                     </p>
                   </div>
                 </div>
@@ -112,10 +112,10 @@ class App extends Component {
                 <div className="item">
                   <img src="https://alicdn.viosey.com/img/mt/advantage/infinite.jpg" alt="[一种风格，无限可能]" />
                   <div className="description">
-                    <h4>一种风格，无限可能</h4>
+                    <h4>One design, infinite possibilities</h4>
                     <p>
-                      <span>基于 Material Design，</span>
-                      <span>可自定义的背景与颜色风格</span>
+                      <span>Based on Material Design</span>
+                      <span>Customizable background and color style</span>
                     </p>
                   </div>
                 </div>
