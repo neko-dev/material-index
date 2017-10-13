@@ -76,9 +76,9 @@ class App extends Component {
                 <div className="item">
                   <img src="https://alicdn.viosey.com/img/mt/advantage/function.jpg" alt="[众多功能]" />
                   <div className="description">
-                    <h4>Many functions</h4>
+                    <h4>Multiple functions</h4>
                     <p>
-                      <span>Two code highlight plug-in, built-in CDN</span>
+                      <span>Two code highlight plugins, built-in CDN</span>
                       <span>Four distinctive pages</span>
                     </p>
                   </div>
@@ -112,7 +112,7 @@ class App extends Component {
                 <div className="item">
                   <img src="https://alicdn.viosey.com/img/mt/advantage/infinite.jpg" alt="[一种风格，无限可能]" />
                   <div className="description">
-                    <h4>One design, infinite possibilities</h4>
+                    <h4>One design, Infinite possibilities</h4>
                     <p>
                       <span>Based on Material Design</span>
                       <span>Customizable background and color style</span>
